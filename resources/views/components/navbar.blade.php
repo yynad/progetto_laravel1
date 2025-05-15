@@ -10,7 +10,7 @@
       <ul class="navbar-nav">
 @auth
       <li class="nav-item">
-          <a class="nav-link" href="#">Ciao, {{Auth::user()->name}}!</a>
+          <a class="nav-link" href="{{route('dashboard')}}">Ciao, {{Auth::user()->name}}!</a>
 @endauth
         <li class="nav-item">
           <a class="nav-link " aria-current="page" href="{{route('homepage')}}">HOMEPAGE</a>

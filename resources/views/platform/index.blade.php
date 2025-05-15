@@ -9,7 +9,7 @@
     </div>
     <div class="container my-5">
         <div class="row">
-            <div class="col-12 d-flex justify-content-center arancio bg-white rounded">
+            <div class="col-12 d-flex justify-content-center arancio border-black rounded p-2 bg-black-fade">
                 <h1>LISTA PIATTAFORME DISPONIBILI</h1>
             </div>
         </div>
@@ -19,11 +19,11 @@
         <div class="row">
             @forelse($platforms as $platform)
             <div class="col-12 col-md-3 my-2">
-            <div class="card card-custom" style="width: 18rem;">
+            <div class="card card-custom h-100">
   <img src="{{Storage::url($platform->logo)}}" class="card-img-top" alt="">
   <div class="card-body">
-    <h5 class="card-title guidacustom"><strong>{{$platform->name}}</strong></h5>
-    <p class="card-text guidacustom"><strong>{{$platform->description}}</strong></p>
+    <h5 class="card-title guidacustom2"><strong>{{$platform->name}}</strong></h5>
+    <p class="card-text guidacustom2"><strong>{{$platform->description}}</strong></p>
     <a href="{{route('platform.show', $platform)}}" class="btn btn-custom">DETTAGLI</a>
   </div>
 </div>

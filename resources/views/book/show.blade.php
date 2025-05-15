@@ -21,16 +21,16 @@
             <div class="col-md-8">
                 <div class="card shadow d-flex justify-content-center align-items-center card-custom rounded">
                     <h1 class="card-title text-center my-2 guidacustom">{{ $book->title }}</h1>
-                    <img src="{{ Storage::url($book->cover) }}" class="card-img-top text-center" alt="Copertina" style="width: 300px; height: 400px;">
+                    <img src="{{ Storage::url($book->cover) }}" class="card-img-top text-center rounded" alt="Copertina" style="width: 300px; height: 400px;">
                     <div class="card-body">
-                        <p class="guidacustom"><strong>Genere:</strong> {{ $book->genre }}</p>
-                        <p class="guidacustom"><strong>Trama:</strong> {{($book->plot)}}</p>
-                        <p class="guidacustom"><strong>Inserito da:</strong> {{ $book->user->name ?? 'Ospite' }}.</p>
+                        <p class="guidacustom2"><strong>Genere:</strong> {{ $book->genre }}</p>
+                        <p class="guidacustom2"><strong>Trama:</strong> {{($book->plot)}}</p>
+                        <p class="guidacustom2"><strong>Inserito da:</strong> {{ $book->user->name ?? 'Ospite' }}.</p>
 
-                        <h4 class="guidacustom">Piattaforme disponibili:</h4>
+                        <h4 class="guidacustom2">Piattaforme disponibili:</h4>
                         <ul>
                             @foreach ($book->platforms as $platform)
-                                <li class="guidacustom">{{ $platform->name }}</li>
+                                <li class="guidacustom2">{{ $platform->name }}</li>
                             @endforeach
                         </ul>
 

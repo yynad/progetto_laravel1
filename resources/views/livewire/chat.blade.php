@@ -6,7 +6,7 @@
   <button class="btn btn-custom" type="submit" id="button-addon2">Invia</button>
 </div>
 </form>
-@if(count($messages) > 0 )
+@if(count($messages) > 1 )
 <div class="bg-light rounded p-3">
     @foreach($messages as $message)
     @if($message['role'] == 'user')

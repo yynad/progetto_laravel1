@@ -16,7 +16,7 @@
     </div>
 
     <div class="container my-4">
-        <div class="row">
+        <div class="row  d-flex justify-content-center">
             @forelse($platforms as $platform)
             <div class="col-12 col-md-3 my-2">
             <div class="card card-custom h-100">

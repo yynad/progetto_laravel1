@@ -24,9 +24,9 @@
 
 
 <!-- SEZIONE FORM CON GLI ATTRIBUTI -->
-    <div class="container my-4">
+    <div class="container my-4  d-flex justify-content-center">
         <div class="row">
-            <div class="col-12 col-md-6">
+            <div class="col-12 wh-100">
             <form action="{{route('book.store')}}" method="POST" enctype="multipart/form-data">
                 @csrf
   <div class="mb-3">

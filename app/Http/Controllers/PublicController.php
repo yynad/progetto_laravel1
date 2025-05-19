@@ -74,13 +74,16 @@ new Middleware('auth', except:['homepage', 'index']),
     return redirect(route('homepage'))->with('denied', 'Non puoi modificare questo libro');
     }
 
-    public function delete(Book $book){
-        if(Auth::user() && Auth::user()->id == $book->user_id){
+   public function delete(Book $book)
+{
+    if(Auth::user() && Auth::user()->id == $book->user_id){
+        $book->platforms()->detach();
         $book->delete();
+
         return redirect(route('book.index'))->with('message', 'Libro eliminato con successo');
     }
     return redirect(route('homepage'))->with('denied', 'Non puoi eliminare questo libro');
-    }
+}
 
     public function dashboard(){
         return view('auth.dashboard');

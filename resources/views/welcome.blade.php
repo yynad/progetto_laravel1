@@ -13,6 +13,23 @@
 </div>
 @endif
 
+<!-- CONTENUTO PAGINA -->
+<div>
+    <div class="container-fluid">
+        <div class="row"> 
+            <div class="col-12 d-flex justify-content-center my-4">
+                <h1 class="arancio">BOOKLOG, la mia Libreria</h1>
+            </div>
+            <div class="col-12 d-flex justify-content-center my-4">
+            <div class=""><h4 class="guidacustom2">Un sito per tenere traccia dei tuoi libri preferiti. Qui potrai aggiungere nuovi libri, inserire nuove piattaforme in libertà.</h4></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- CONTENUTO PAGINA -->
+
+
 @guest
 <div class="bodyclass">
 <div class="container my-5">
@@ -39,4 +56,12 @@
 </div>
 </div>
 @endauth
+
+<div class="container">
+    <div class="row justify-content-center my-5">
+        <div class="col-12 col-md-6 text-center">
+            <livewire:chat />
+        </div>
+    </div>
+</div>
 </x-layout>

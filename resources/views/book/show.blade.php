@@ -1,9 +1,7 @@
 <x-layout>
     <x-navbar></x-navbar>
 
-    <div class="container my-5" style="font-family: 'Cloister Black', 'Uncial Antiqua', serif; color: #d9c29d; 
-        background: url('/images/parchment-texture.jpg') no-repeat center center; background-size: cover; 
-        padding: 3rem; box-shadow: 0 0 25px #7a5c2d inset;">
+    <div class="container my-5" style="font-family: 'Cloister Black', 'Uncial Antiqua', serif; color: #d9c29d; ">
 
         <div class="row justify-content-center mb-4">
             <div class="col-md-8 text-center">
@@ -31,7 +29,7 @@
 
                 <div class="text-center mb-4">
                     <img src="{{ Storage::url($book->cover) }}" alt="Copertina del libro {{ $book->title }}" 
-                         style="width: 250px; height: 400px; border: 5px solid #a97c50; border-radius: 15px; box-shadow: 0 0 15px #7a5c2d;">
+                         style="width: 350px; height: 400px; border: 5px solid #a97c50; border-radius: 15px; box-shadow: 0 0 15px #7a5c2d;">
                 </div>
 
                 <section class="px-4 mb-4" style="color: #deb887; font-style: italic; font-size: 1.1rem; line-height: 1.7;">

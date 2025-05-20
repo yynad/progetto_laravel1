@@ -37,6 +37,10 @@ body {
     background-repeat: no-repeat;
 }
 
+.modificato{
+  color: #D9C29D;
+}
+
 .btn-custom{
     font-family: "MedievalSharp", cursive;
     color: black;

@@ -4,13 +4,13 @@
         <div class="row justify-content-center">
             <div class="col-12 col-lg-10">
                 <div class="card border-0 shadow-lg rounded-4 overflow-hidden">
-                    <div class="card-header text-white p-4 bg-arancio">
-                        <div class="d-flex justify-content-center align-items-center bg-arancio">
+                    <div class="card-header text-white p-4 bg-aranciosfumato">
+                        <div class="d-flex justify-content-center align-items-center">
                             <h3 class="mb-0 fw-bold guidacustom">IL TUO PROFILO</h3>
                         </div>
                     </div>
                     
-                    <div class="card-body p-4">
+                    <div class="card-body p-4 bg-nero">
                         <div class="row">
                             <div class="col-md-4 text-center mb-4 mb-md-0">
                                 <div class="profile-img-container mb-3">
@@ -18,9 +18,9 @@
                                         <span>{{ strtoupper(substr(Auth::user()->name, 0, 1)) }}</span>
                                     </div>
                                 </div>
-                                <h4 class="fw-bold mb-1 guidacustom">{{ Auth::user()->name }}</h4>
-                                <p class="text-muted mb-3 guidacustom">{{ Auth::user()->email }}</p>
-                                <p class="badge bg-success mb-0 guidacustom">Utente verificato</p>
+                                <h4 class="fw-bold mb-1 guidacustom2">{{ Auth::user()->name }}</h4>
+                                <p class=" mb-3 guidacustom2">{{ Auth::user()->email }}</p>
+                                <p class="badge bg-success mb-0 guidacustom2">Utente verificato</p>
                             </div>
                             
                             <div class="col-md-8">
@@ -32,8 +32,8 @@
                                                     <i class="bi bi-file-earmark-text text-primary"></i>
                                                 </div>
                                                 <div>
-                                                    <p class="text-muted mb-0 guidacustom">Libri pubblicati:</p>
-                                                    <h5 class="fw-bold mb-0 guidacustom">{{ Auth::user()->books->count() }}</h5>
+                                                    <p class=" mb-0 guidacustom2 fw-bolder ">Libri pubblicati:</p>
+                                                    <h5 class="fw-bold mb-0 guidacustom2">{{ Auth::user()->books->count() }}</h5>
                                                 </div>
                                             </div>
                                         </div>
@@ -46,8 +46,8 @@
                                                     <i class="bi bi-calendar-check text-success"></i>
                                                 </div>
                                                 <div>
-                                                    <p class="text-muted mb-0 guidacustom">Account creato:</p>
-                                                    <h5 class="fw-bold mb-0 guidacustom">{{ Auth::user()->created_at->locale('it')->diffForHumans() }}</h5>
+                                                    <p class=" mb-0 guidacustom2 fw-bolder">Account creato:</p>
+                                                    <h5 class="fw-bold mb-0 guidacustom2">{{ Auth::user()->created_at->locale('it')->diffForHumans() }}</h5>
                                                 </div>
                                             </div>
                                         </div>
@@ -55,14 +55,14 @@
                                 </div>
                                 
                                 <div class="border-top pt-4 mt-2">
-                                    <h5 class="fw-bold mb-3 guidacustom">Informazioni personali</h5>
+                                    <h5 class="fw-bold mb-3 guidacustom2">Informazioni personali</h5>
                                     <div class="mb-3">
-                                        <p class="mb-1 guidacustom"><strong>Nome:</strong> {{ Auth::user()->name }}</p>
-                                        <p class="mb-1 guidacustom"><strong>Email:</strong> {{ Auth::user()->email }}</p>
-                                        <p class="mb-1 guidacustom"><strong>Data di registrazione:</strong> {{ Auth::user()->created_at->format('d/m/Y') }}</p>
+                                        <p class="mb-1 guidacustom2"><strong>Nome:</strong> {{ Auth::user()->name }}</p>
+                                        <p class="mb-1 guidacustom2"><strong>Email:</strong> {{ Auth::user()->email }}</p>
+                                        <p class="mb-1 guidacustom2"><strong>Data di registrazione:</strong> {{ Auth::user()->created_at->format('d/m/Y') }}</p>
                                     </div>
                                     
-                                    <h5 class="fw-bold mb-3 guidacustom">Ultime attività</h5>
+                                    <h5 class="fw-bold mb-3 guidacustom2">Ultime attività</h5>
                                     @if(Auth::user()->books->count() > 0)
                                         <div class="list-group">
                                             @foreach(Auth::user()->books->sortByDesc('created_at')->take(3) as $book)
@@ -85,9 +85,9 @@
                         </div>
                     </div>
                     
-                    <div class="card-footer bg-light p-4">
+                    <div class="card-footer bg-aranciosfumato2 p-4">
                         <div class="d-flex justify-content-between align-items-center">
-                            <a href="{{ route('homepage') }}" class="btn btn-custom">
+                            <a href="{{ route('homepage') }}" class="btn btn-custom3">
                                 <i class="bi bi-arrow-left me-1"></i>TORNA ALLA HOME
                             </a>
                             <a href="#" class="btn btn-custom2" onclick="event.preventDefault(); document.querySelector('#form-logout').submit();">
@@ -98,24 +98,10 @@
                             </form>
                         </div>
                     </div>
+
+
                 </div>
-                
-                <div class="card border-0 shadow-sm rounded-4 mt-4 border-danger">
-                    <div class="card-body p-4">
-                        <h5 class="fw-bold mb-3 text-danger">
-                            <i class="bi bi-exclamation-triangle-fill me-2"></i>PRIVACY
-                        </h5>
-                        <p class="text-muted mb-3">Vuoi eliminare il tuo account?</p>
-                        
-                        <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#deleteAccountModal">
-                            <i class="bi bi-trash me-1"></i>Elimina il mio account
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
+
     <div class="modal fade" id="deleteAccountModal" tabindex="-1" aria-labelledby="deleteAccountModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content border-0">

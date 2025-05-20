@@ -3,7 +3,7 @@
 <div class="container my-4">
         <div class="row">
             <div class="col-12 d-flex justify-content-center arancio rounded border-black p-2">
-                <h1>LIBRERIA</h1>
+                <h1 class="fw-bold">LIBRERIA</h1>
             </div>
         </div>
     </div>

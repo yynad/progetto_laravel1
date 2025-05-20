@@ -10,7 +10,7 @@
     <div class="container my-5">
         <div class="row">
             <div class="col-12 d-flex justify-content-center arancio border-black rounded p-2 bg-black-fade">
-                <h1>LISTA PIATTAFORME DISPONIBILI</h1>
+                <h1 class="fw-bold">LISTA PIATTAFORME DISPONIBILI</h1>
             </div>
         </div>
     </div>

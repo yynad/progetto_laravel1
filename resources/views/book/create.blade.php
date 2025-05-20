@@ -4,7 +4,7 @@
     <div class="container my-4">
         <div class="row">
             <div class="col-12 d-flex justify-content-center p-2">
-                <h1 class="arancio">INSERISCI UN NUOVO LIBRO</h1>
+                <h1 class="arancio fw-bold">INSERISCI UN NUOVO LIBRO</h1>
             </div>
         </div>
     </div>

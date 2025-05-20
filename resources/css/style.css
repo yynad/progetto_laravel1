@@ -15,6 +15,21 @@ h1,h2,h3,h4,.testomodificato{
     background-color: #E08D32;
 }
 
+.bg-nero{
+  background-color: #050301;
+}
+.bg-grigio2{
+  background-color: #999999;
+}
+
+.bg-aranciosfumato{
+  background: linear-gradient(to bottom, rgba(199, 119, 8, 1), rgba(255, 165, 0, 1));
+}
+
+.bg-aranciosfumato2{
+  background: linear-gradient(to top, rgba(199, 119, 8, 1), rgba(255, 165, 0, 0.6));
+}
+
 body {
     background-image: url('../images/background.png');
     background-size: cover;
@@ -40,6 +55,19 @@ body {
     color: black;
     background-color: red;
     transform: scale(1.30);
+}
+
+.btn-custom3{
+    font-family: "MedievalSharp", cursive;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    transition: 0.5s;
+}
+.btn-custom3:hover{
+    font-family: "MedievalSharp", cursive;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    transform: scale(1.15);
 }
 
 .card-custom{

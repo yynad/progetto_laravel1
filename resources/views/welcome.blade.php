@@ -18,7 +18,7 @@
     <div class="container-fluid">
         <div class="row"> 
             <div class="col-12 d-flex justify-content-center my-4">
-                <h1 class="arancio">BOOKLOG</h1>
+                <h1 class="arancio fw-bold">BOOKLOG</h1>
             </div>
             <div class="col-12 d-flex justify-content-center my-4">
             <div class=""><h4 class="guidacustom2">Un sito per tenere traccia dei tuoi libri preferiti. Qui potrai aggiungere nuovi libri e inserire nuove piattaforme in libertà.</h4></div>
@@ -53,7 +53,7 @@
 <div class="container my-5">
     <div class="row">
         <div class="col-12 d-flex justify-content-center">
-            <h1 class="text-white">Ciao, <span class="arancio"> {{Auth::user()->name}}!</span> Bentornato.</h1>
+            <h1 class="text-white">Ciao, <span class="arancio"> {{Auth::user()->name}}!</span></h1>
         </div>
     </div>
 </div>

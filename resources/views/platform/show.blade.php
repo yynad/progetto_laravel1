@@ -1,7 +1,7 @@
 <x-layout>
     <x-navbar></x-navbar>
     <header class="d-flex justify-content-center align-items-center">
-        <h1 class="text-white">DETTAGLIO DI: <span class="arancio">{{$platform->name}}</span></h1>
+        <h1 class="text-white fw-bold">DETTAGLIO DI: <span class="arancio fw-bold">{{$platform->name}}</span></h1>
         </header>
 <div class="container my-5">
     <div class="row">

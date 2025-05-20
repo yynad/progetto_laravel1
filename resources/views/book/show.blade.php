@@ -20,7 +20,7 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card shadow d-flex justify-content-center align-items-center card-custom rounded">
-                    <h1 class="card-title text-center my-2 guidacustom2">{{ $book->title }}</h1>
+                    <h1 class="card-title text-center my-2 guidacustom2 fw-bold">{{ $book->title }}</h1>
                     <img src="{{ Storage::url($book->cover) }}" class="card-img-top text-center rounded" alt="Copertina" style="width: 250px; height: 400px;">
                     <div class="card-body d-flex flex-column align-items-center">
                         <p class="guidacustom2"><strong>Genere:</strong> {{ $book->genre }}</p>

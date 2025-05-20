@@ -3,7 +3,7 @@
     <div class="container my-5">
         <div class="row">
             <div class="col-12 d-flex justify-content-center arancio">
-                <h1>INSERISCI UNA NUOVA PIATTAFORMA</h1>
+                <h1 class="fw-bold">INSERISCI UNA NUOVA PIATTAFORMA</h1>
             </div>
         </div>
     </div>

@@ -50,6 +50,6 @@
 </body>
 <script>
     const fireSound = document.getElementById('fireSound');
-    fireSound.volume = 0.08; 
+    fireSound.volume = 0.1; 
 </script>
 </html>

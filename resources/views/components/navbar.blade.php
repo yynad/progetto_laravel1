@@ -54,8 +54,8 @@
             <li>
               <a class="dropdown-item text-dark" href="{{ route('register') }}">📝 REGISTRATI</a>
             </li>
-          </ul>
-        </li>
+          </li>
+        </ul>
         @endguest
 
         @auth

@@ -43,16 +43,16 @@
 
         @guest
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle px-3 text-dark" href="#" role="button" data-bs-toggle="dropdown"
-            aria-expanded="false" style="font-size: 1.2rem;">
+          <a class="nav-link dropdown-toggle px-3" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false" style="font-size: 1.2rem; color: #D9C29D">
             👤 ACCEDI
           </a>
           <ul class="dropdown-menu dropdown-menu-end" style="background-color: #f3e4bc; border: 2px solid #4d2c09;">
             <li>
-              <a class="dropdown-item text-dark" href="{{ route('login') }}">🔐 Accedi</a>
+              <a class="dropdown-item text-dark" href="{{ route('login') }}">🔐 ACCEDI</a>
             </li>
             <li>
-              <a class="dropdown-item text-dark" href="{{ route('register') }}">📝 Registrati</a>
+              <a class="dropdown-item text-dark" href="{{ route('register') }}">📝 REGISTRATI</a>
             </li>
           </ul>
         </li>

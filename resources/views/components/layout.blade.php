@@ -6,6 +6,10 @@
     <title>Booklog</title>
     <link href="https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+    <audio id="fireSound" autoplay loop>
+    <source src="{{ asset('fuoco.wav') }}" type="audio/mpeg">
+    Il tuo browser non supporta l'elemento audio.
+</audio>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <style>
         #background-video {
@@ -44,4 +48,8 @@
         {{$slot}}
     </div>   
 </body>
+<script>
+    const fireSound = document.getElementById('fireSound');
+    fireSound.volume = 0.08; 
+</script>
 </html>

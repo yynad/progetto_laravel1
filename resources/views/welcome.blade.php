@@ -83,7 +83,7 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-12 d-flex justify-content-center my-4">
-            <h1 class="arancio fw-bold">Benvenuto su BOOKLOG!</h1>
+            <h1 class="arancio fw-bold">Benvenuto al Castello, avventuriero!</h1>
         </div>
         <div class="col-12 d-flex justify-content-center my-4">
             <div><h4 class="guidacustom2">Un grimorio personale dove annotare i tuoi volumi arcani preferiti. Aggiungi nuovi tomi e registra le tue fonti con libertà sovrana.</h4></div>

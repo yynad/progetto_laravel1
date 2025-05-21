@@ -6,11 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Platform extends Model
 {
-    protected $fillable = [
-        'name',
-        'logo',
-        'description',
-    ];
+  protected $fillable = ['name', 'description', 'logo', 'user_id'];
 
     public function books()
     {

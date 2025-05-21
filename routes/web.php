@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PublicController;
+use App\Http\Controllers\AccountController;
 use App\Http\Controllers\PlatformController;
 
 Route::get('/', [PublicController::class, 'homepage'])->name('homepage');
@@ -17,3 +18,7 @@ Route::get('/platform/index', [PlatformController::class, 'index'])->name('platf
 Route::get('/platform/create', [PlatformController::class, 'create'])->name('platform.create');
 Route::post('/platform/store', [PlatformController::class, 'store'])->name('platform.store');
 Route::get('platform/show/{platform}', [PlatformController::class, 'show'])->name('platform.show');
+Route::post('/delete-account', [AccountController::class, 'destroy'])->middleware('auth')->name('account.delete');
+Route::view('/goodbye', 'goodbye')->name('goodbye');
+Route::get('/platforms/{platform}/edit', [PlatformController::class, 'edit'])->name('platform.edit');
+Route::put('/platforms/{platform}', [PlatformController::class, 'update'])->name('platform.update');

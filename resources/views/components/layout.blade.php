@@ -6,9 +6,9 @@
     <title>Booklog</title>
     <link href="https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
-    <audio id="fireSound" autoplay loop>
-    <source src="{{ asset('fuoco.wav') }}" type="audio/mpeg">
-    Il tuo browser non supporta l'elemento audio.
+<audio id="fireSound" autoplay loop>
+  <source src="{{ asset('fuoco.wav') }}" type="audio/wav">
+  Il tuo browser non supporta l'elemento audio.
 </audio>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <style>
@@ -46,8 +46,29 @@
 
     <div class="min-vh-100">
         {{$slot}}
-    </div>   
+    </div>
+    <div class="modal fade" id="deleteAccountModal" tabindex="-1" aria-labelledby="deleteAccountLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-danger text-white">
+        <h5 class="modal-title" id="deleteAccountLabel">Elimina Account</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Chiudi"></button>
+      </div>
+      <div class="modal-body">
+        Sei sicuro di voler eliminare il tuo account? Questa operazione è irreversibile.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annulla</button>
+        <form id="deleteAccountForm" method="POST" action="{{ route('account.delete') }}">
+    @csrf
+    <button type="submit" class="btn btn-danger">Elimina definitivamente</button>
+</form>
+      </div>
+    </div>
+  </div>
+</div>
 </body>
+
 <script>
     const fireSound = document.getElementById('fireSound');
     fireSound.volume = 0.1; 
